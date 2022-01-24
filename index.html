@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JSON Tutorial</title>
+    </head>
+
+    <body>
+        <script> 
+        
+            //script tag for JavaScript
+            //this is a JavaScript object, not JSON
+            //need the double quotes on the key and value for JSON
+            var person = {  //object is represented by curly braces
+                name: "Jonathan",
+                age: 35,
+                //email: function() {
+                //    return 'jmaskew@purdue.edu';
+                //}
+                address:{
+                    street: "5358 Angel Way",
+                    city: "Noblesville"
+                },
+                children: ["Jonathan", "Nicholas", "Maskew"]
+            }
+
+            console.log(person.address.city);
+
+            /*
+            person = JSON.stringify(person); //turns into valid JSON
+
+            person = JSON.parse(person); //turns JSON back into an object
+
+            var people = [
+                {
+                    name: "Jimmy",
+                    age: 90
+                },
+                {
+                    name: "John",
+                    age: 99
+                },
+                {
+                    name: "Sandwhiches",
+                    age: 100
+                }
+            ];
+
+            for (var i = 0; i< people.length; i++)  {
+                console.log(people[i]);
+            }
+
+            console.log(person);
+            //console.log(person.email());
+            console.log(person.children[1]);
+            */
+
+
+
+
+            
+            /*
+            This is AJAX.
+            It allows us to grab information from a server.
+            So we can grab the JSON people.jsonc.
+            Then, we can use JSON.parse() to convert it back to an object.
+
+            var xhttp = new XMLHttpRequest(); //broswer has httpsrequest object. we're accessing and storing in this variable
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(xhttp.responseText);
+                }
+            };
+                xhttp.open("GET", "people.jsonc", true);
+                xhttp.send();
+            */
+        </script>
+    </body>
+</html>

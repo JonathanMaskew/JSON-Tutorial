@@ -1,0 +1,40 @@
+/*
+JavaScript Object Notation
+Used to send info back and forth
+
+Essentially replaces XML
+Often used with AJAX
+
+Most modern programming languages can parse JSON
+
+DATA TYPES:
+Number - no difference between integer and floats
+String - Unicode characters
+Boolean
+Array
+Object
+Null
+
+SYNTAX RULES:
+Uses key/value pairs - {"name":"Jonathan}
+To be parsed as JSON, use double quotes on key and value
+Must use specified data types
+File type is .json
+*/
+
+{
+    "people":[
+        {
+            "name": "Jimmy",
+            "age": 90
+        },
+        {
+            "name": "John",
+            "age": 99
+        },
+        {
+            "name": "Sandwhiches",
+            "age": 100
+        }
+    ]
+}
